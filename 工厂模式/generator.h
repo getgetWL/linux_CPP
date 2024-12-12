@@ -20,6 +20,7 @@ public:
         if (pshape)
         {
             delete pshape;
+            cout << "析构~ShapeGenerator"<<endl;
             pshape = nullptr;
         }
     }
