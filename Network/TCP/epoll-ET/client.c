@@ -60,6 +60,7 @@ int main()
 			return -1;
 		}
 		printf("%s\n", answer);
+		memset(answer,0,sizeof(answer));
 	}
 
 	close(sockfd);

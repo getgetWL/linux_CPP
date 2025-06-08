@@ -26,7 +26,7 @@ struct ntyevent
 	void *arg;
 	int (*callback)(int fd, int events, void *arg);
 
-	int status;
+	int status;		//在初始化时默认为0，为添加
 	char buffer[BUFFER_LENGTH];
 	int length;
 	long last_active;
@@ -41,9 +41,9 @@ struct eventblock
 
 struct ntyreactor
 {
-	int epfd;
-	int blkcnt;
-	struct eventblock *evblk; // fd --> 100w
+	int epfd;					// 描述符集合
+	int blkcnt;					// 分区数量
+	struct eventblock *evblk; 	// fd --> 100w
 };
 
 int recv_cb(int fd, int events, void *arg);
@@ -75,11 +75,11 @@ int nty_event_add(int epfd, int events, struct ntyevent *ev)
 	// ev->status在初始化时默认为0，为添加
 	if (ev->status == 1)
 	{
-		op = EPOLL_CTL_MOD;
+		op = EPOLL_CTL_MOD;		//若已添加则表示修改状态
 	}
 	else
 	{
-		op = EPOLL_CTL_ADD;
+		op = EPOLL_CTL_ADD;		//若已添加则表示添加状态
 		ev->status = 1;
 	}
 
@@ -211,6 +211,7 @@ int init_sock(short port)
 {
 
 	int fd = socket(AF_INET, SOCK_STREAM, 0);
+	//用于将文件描述符（fd）设置为非阻塞模式的系统调用
 	fcntl(fd, F_SETFL, O_NONBLOCK);
 
 	struct sockaddr_in server_addr;
@@ -286,7 +287,7 @@ struct ntyevent *ntyreactor_idx(struct ntyreactor *reactor, int sockfd)
 	{
 		blk = blk->next;
 	}
-	// 返回sockfd对应的ntyevent
+	// 返回sockfd对应的ntyevent的地址
 	return &blk->events[sockfd % MAX_EPOLL_EVENTS];
 }
 
@@ -296,14 +297,14 @@ int ntyreactor_init(struct ntyreactor *reactor)
 	if (reactor == NULL)
 		return -1;
 	memset(reactor, 0, sizeof(struct ntyreactor));
-
+	//自定义集合空间，大小为1，epfd为关联标识符
 	reactor->epfd = epoll_create(1);
 	if (reactor->epfd <= 0)
 	{
 		printf("create epfd in %s err %s\n", __func__, strerror(errno));
 		return -2;
 	}
-
+	//初始化一个分区的event
 	struct ntyevent *evs = (struct ntyevent *)malloc((MAX_EPOLL_EVENTS) * sizeof(struct ntyevent));
 	if (evs == NULL)
 	{
@@ -352,6 +353,7 @@ int ntyreactor_destory(struct ntyreactor *reactor)
 	return 0;
 }
 
+//类似 将sockfd作为下标存储在数组中
 int ntyreactor_addlistener(struct ntyreactor *reactor, int sockfd, NCALLBACK *acceptor)
 {
 

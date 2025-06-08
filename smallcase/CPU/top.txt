@@ -1,0 +1,198 @@
+top - 09:53:36 up 17 min,  1 user,  load average: 8.10, 7.04, 4.56
+Tasks: 191 total,   1 running, 190 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 31.6 us, 17.5 sy,  0.0 ni, 47.4 id,  0.0 wa,  1.8 hi,  1.8 si,  0.0 st
+MiB Mem :   4617.4 total,   3625.1 free,    791.4 used,    200.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   3657.9 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 5011 root      20   0 9891608 328772  96576 S 161.1   7.0  19:25.37 Sf_VCt_L3_FC120Perception
+ 5016 root      20   0 5278672 130572  74116 S  44.4   2.8   3:13.73 Sf_VCt_L3_FC120Mapping
+ 1544 root      20   0 1832716  25552  14280 S  33.3   0.5   5:13.89 /home/apps/FT_Apps/VisionServer/VisionServer/bin/VisionServer
+ 4292 root      20   0 3493636  35536  12180 S  27.8   0.8   3:56.39 ./view_tool_J5_1
+ 5005 root      20   0 5472880  97112  59884 S  27.8   2.1   3:06.50 Sf_VCt_L3_FC120SensorCamera
+ 4999 root      20   0 4228764  90220  62996 S  22.2   1.9   3:14.71 Sf_VCt_L3_FC120Localization
+16824 root      20   0    6512   2572   2144 R  16.7   0.1   0:00.07 top -d 3 -b -c
+ 1539 root      20   0  716776  20864  13544 S  11.1   0.4   1:47.86 /home/apps/FT_Apps/Chasis/Chas_SA_FDD_IBCEPSVEHInfo_ADAS_J5_1/bin/Chas_SA_FDD_I+
+ 1543 root      20   0 3067728  44908  23644 S  11.1   0.9   1:18.60 /home/apps/FT_Apps/Sf_VCt_PlfM/Sf_VCt_J51_PlfMgt/bin/Sf_VCt_J51_PlfMgt
+ 1201 root      20   0 1272108  12360   7268 S   5.6   0.3   0:39.49 /home/apps/FT_Apps/PcieComService/PcieComServiceApp
+ 1282 root      20   0 1109048  23368   4460 S   5.6   0.5   0:11.11 ./SPI_Server/SPIService_J5_1
+ 1312 root      20   0 1271992  10224   3740 S   5.6   0.2   0:58.68 ./CIC_Server/CIC_Server
+ 1399 root      rt   0  863116  35372  17132 S   5.6   0.7   0:10.42 /home/apps/FT_Apps/TimeManager/Sf_VCt_TimeManager_J5_1/bin/Sf_VCt_TimeManager_J+
+ 1540 root      20   0  641460  19096  12644 S   5.6   0.4   1:08.63 /home/apps/FT_Apps/Chasis/Chas_SA_FDD_RWSInfo_AP_J5_1/bin/Chas_SA_FDD_RWSInfo_A+
+ 1681 root      20   0       0      0      0 D   5.6   0.0   0:16.68 [isp_hw1_process]
+ 4864 root      20   0 1675216  32104  17560 S   5.6   0.7   0:18.75 ./apps/EM_AppM/Sf_VCt_AppM_J5_1/bin/Sf_VCt_AppM_J5_1
+    1 root      20   0    4176   1068    948 S   0.0   0.0   0:00.53 /bin/sh /sbin/init
+    2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 [kthreadd]
+    3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [rcu_gp]
+    4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [rcu_par_gp]
+    7 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [kworker/u16:0+mcore_workqueue]
+    8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [mm_percpu_wq]
+    9 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [rcu_tasks_kthre]
+   10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [rcu_tasks_rude_]
+   11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [rcu_tasks_trace]
+   12 root      20   0       0      0      0 S   0.0   0.0   0:18.02 [ksoftirqd/0]
+   13 root      20   0       0      0      0 I   0.0   0.0   0:01.71 [rcu_preempt]
+   14 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 [migration/0]
+   15 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [cpuhp/0]
+   16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [cpuhp/1]
+   17 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 [migration/1]
+   18 root      20   0       0      0      0 S   0.0   0.0   0:00.54 [ksoftirqd/1]
+   21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [cpuhp/2]
+   22 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 [migration/2]
+   23 root      20   0       0      0      0 S   0.0   0.0   0:00.52 [ksoftirqd/2]
+   26 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [cpuhp/3]
+   27 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 [migration/3]
+   28 root      20   0       0      0      0 S   0.0   0.0   0:00.44 [ksoftirqd/3]
+   30 root       0 -20       0      0      0 I   0.0   0.0   0:00.35 [kworker/3:0H-kblockd]
+   31 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [cpuhp/4]
+   32 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 [migration/4]
+   33 root      20   0       0      0      0 S   0.0   0.0   0:00.51 [ksoftirqd/4]
+   36 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [cpuhp/5]
+   37 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 [migration/5]
+   38 root      20   0       0      0      0 S   0.0   0.0   0:00.52 [ksoftirqd/5]
+   39 root      20   0       0      0      0 I   0.0   0.0   0:00.00 [kworker/5:0-events]
+   41 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [cpuhp/6]
+   42 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 [migration/6]
+   43 root      20   0       0      0      0 S   0.0   0.0   0:00.50 [ksoftirqd/6]
+   46 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [cpuhp/7]
+   47 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 [migration/7]
+   48 root      20   0       0      0      0 S   0.0   0.0   0:00.52 [ksoftirqd/7]
+   51 root      20   0       0      0      0 S   0.0   0.0   0:00.01 [kdevtmpfs]
+   52 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [netns]
+   53 root      20   0       0      0      0 S   0.0   0.0   0:00.15 [kauditd]
+   54 root      20   0       0      0      0 I   0.0   0.0   0:22.68 [kworker/0:1-events]
+   56 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [khungtaskd]
+   57 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [oom_reaper]
+   58 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [writeback]
+   59 root      20   0       0      0      0 S   0.0   0.0   0:00.01 [kcompactd0]
+   60 root      25   5       0      0      0 S   0.0   0.0   0:00.00 [ksmd]
+   61 root      39  19       0      0      0 S   0.0   0.0   0:00.00 [khugepaged]
+   69 root      20   0       0      0      0 I   0.0   0.0   0:00.04 [kworker/4:1-mm_percpu_wq]
+   78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kintegrityd]
+   79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kblockd]
+   80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [blkcg_punt_bio]
+   81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [tpm_dev_wq]
+   82 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [edac-poller]
+   83 root      20   0       0      0      0 I   0.0   0.0   0:00.00 [kworker/2:1-events]
+   84 root      39  19       0      0      0 S   0.0   0.0   0:00.00 [system]
+   85 root      39  19       0      0      0 S   0.0   0.0   0:00.00 [chunk]
+   86 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [devfreq_wq]
+   87 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [kworker/u16:1+dcore0_workqueue]
+   88 root       0 -20       0      0      0 I   0.0   0.0   0:00.42 [kworker/2:1H-kblockd]
+   93 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [kswapd0]
+   94 root      20   0       0      0      0 S   0.0   0.0   0:00.12 [kiohungcheckd]
+   95 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/u17:0]
+   96 root      20   0       0      0      0 I   0.0   0.0   0:00.00 [kworker/3:1-events]
+   97 root      20   0       0      0      0 I   0.0   0.0   0:00.06 [kworker/5:1-mm_percpu_wq]
+   98 root      20   0       0      0      0 I   0.0   0.0   0:00.04 [kworker/6:1-mm_percpu_wq]
+   99 root      20   0       0      0      0 I   0.0   0.0   0:00.03 [kworker/7:1-mm_percpu_wq]
+  113 root      20   0       0      0      0 I   0.0   0.0   0:00.00 [kworker/4:2-events]
+  117 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [mcore_workqueue]
+  118 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [hobot_diag_remo]
+  119 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [dcore0_workqueu]
+  120 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [dcore0_cdump_wo]
+  121 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [kworker/u16:2+dcore0_cdump_workqueue]
+  122 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [kworker/u16:3+dcore1_workqueue]
+  123 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [dcore1_workqueu]
+  124 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [dcore1_cdump_wo]
+  125 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [kworker/u16:4+dcore1_cdump_workqueue]
+  126 root      20   0       0      0      0 I   0.0   0.0   0:00.05 [kworker/u16:5-events_unbound]
+  128 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [diag_polling_ca]
+  133 root      20   0       0      0      0 I   0.0   0.0   0:00.05 [kworker/1:2-mm_percpu_wq]
+  135 root      20   0       0      0      0 I   0.0   0.0   0:00.00 [kworker/1:4-events]
+  137 root      20   0       0      0      0 I   0.0   0.0   0:00.05 [kworker/3:2-mm_percpu_wq]
+  140 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [sdhci]
+  141 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 [irq/25-mmc0]
+  152 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [mmc_complete]
+  154 root       0 -20       0      0      0 I   0.0   0.0   0:00.27 [kworker/5:1H-kblockd]
+  156 root       0 -20       0      0      0 I   0.0   0.0   0:00.31 [kworker/4:1H-kblockd]
+  161 root      20   0       0      0      0 I   0.0   0.0   0:00.21 [kworker/u16:6-ext4-rsv-conversion]
+  162 root      20   0       0      0      0 S   0.0   0.0   0:00.08 [jbd2/mmcblk0p32]
+  163 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [ext4-rsv-conver]
+  165 root       0 -20       0      0      0 I   0.0   0.0   0:00.37 [kworker/1:1H-kblockd]
+  171 root      20   0    4176   1144   1024 S   0.0   0.0   0:00.00 init
+  177 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [jbd2/mmcblk0p29]
+  202 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [ext4-rsv-conver]
+  317 root       0 -20       0      0      0 I   0.0   0.0   0:00.22 [kworker/7:1H-kblockd]
+  365 root       0 -20       0      0      0 I   0.0   0.0   0:00.29 [kworker/6:1H-kblockd]
+  724 root      20   0    4704   1724   1100 S   0.0   0.0   0:00.06 busybox mdev -d
+  740 root      20   0       0      0      0 I   0.0   0.0   0:00.00 [kworker/7:3-events]
+  742 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [lkof_process]
+  744 root      20   0       0      0      0 I   0.0   0.0   0:00.00 [kworker/6:2-events]
+  746 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [hobot_wq]
+  758 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [isp_bh_queue]
+  760 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [isp_hw1_bh_queu]
+  762 root      20   0       0      0      0 I   0.0   0.0   0:00.04 [kworker/2:2-events]
+  770 root      20   0       0      0      0 S   0.0   0.0   0:00.80 [rasdes_check_kt]
+  771 root      20   0       0      0      0 S   0.0   0.0   0:00.07 [dbi_check_kthre]
+  772 root      20   0       0      0      0 S   0.0   0.0   0:00.29 [ep_stl_kthread]
+  774 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [spidev-dummy-kt]
+  777 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [spi1]
+  778 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [spi3]
+  779 root      20   0       0      0      0 S   0.0   0.0   0:00.15 [spi5]
+  867 root      20   0    4176    132      0 S   0.0   0.0   0:00.00 busybox crond
+  871 root      20   0  373764   2952   1616 S   0.0   0.1   0:00.34 /usr/bin/sysmonitor
+  902 root      16  -4   11480   2056   1848 S   0.0   0.0   0:01.05 /usr/sbin/auditd -n
+  904 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [audit_prune_tre]
+  927 root      20   0       0      0      0 S   0.0   0.0   0:00.89 [jbd2/mmcblk0p36]
+  928 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [ext4-rsv-conver]
+  930 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [jbd2/mmcblk0p40]
+  931 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [ext4-rsv-conver]
+  933 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [jbd2/mmcblk0p37]
+  934 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [ext4-rsv-conver]
+  936 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [jbd2/mmcblk0p38]
+  937 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [ext4-rsv-conver]
+  939 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [jbd2/mmcblk0p39]
+  940 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [ext4-rsv-conver]
+  980 root      20   0    2736   1416   1268 S   0.0   0.0   0:01.46 dropbear -B
+ 1119 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [jbd2/mmcblk0p34]
+ 1120 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [ext4-rsv-conver]
+ 1139 root      20   0  855804  25592  19088 S   0.0   0.5   0:10.84 /home/apps/FT_Apps/TsyncDaemon/bin/tsync /home/apps/FT_Apps/TsyncDaemon/conf/ts+
+ 1169 root      20   0 1077736  19736  12580 S   0.0   0.4   0:01.05 execution-manager -R /home/apps -S machine -F FT_Apps/TimeManager FT_Apps/Visio+
+ 1199 root      20   0    2904   1908   1212 S   0.0   0.0   0:00.26 /bin/ftdlt-daemon -c /opt/config/logcfg/dlt.conf -d -p 3600
+ 1200 root      20   0   30512  28116   5668 S   0.0   0.6   0:11.12 python3 /oneui/scripts/rpcutil/getPortSta.py 2
+ 1227 root      20   0  385400   8112   4356 S   0.0   0.2   0:07.08 someipd
+ 1249 root      20   0   79644   3364   2008 S   0.0   0.1   0:04.94 /bin/dlt-daemon -c /opt/config/logcfg/apdlt.conf -d -p 3490
+ 1251 root      20   0   98484   3836   3480 S   0.0   0.1   0:00.38 /home/apps/FT_Apps/FtLogRevicer/FtLogRevicer
+ 1285 root       0 -20       0      0      0 I   0.0   0.0   0:00.47 [kworker/0:2H-events_highpri]
+ 1332 root      20   0 1060764  25720  18100 S   0.0   0.5   0:05.91 /opt/ap/diagnostic_manager/bin/diagnostic_manager
+ 1362 root      20   0 1119028  35792  23476 S   0.0   0.8   0:04.75 ./Sf_VCt_Diag_J5_1/bin/Sf_VCt_Diag_J5_1
+ 1400 root      20   0 1316480  24788  18092 S   0.0   0.5   0:20.29 /home/apps/FT_Apps/Sf_VCt_PlfM/StateManager/bin/StateManager -c
+ 1408 root      20   0  678136  23780  18416 S   0.0   0.5   0:01.22 ./GeneralDiag/Sf_VCt_GeneralDiag_J5_1/bin/Sf_VCt_GeneralDiag_J5_1
+ 1489 root      20   0  479792  11496   8384 S   0.0   0.2   0:00.75 ./FactoryMode/Sf_VCo_Factory_J5_1_Test
+ 1541 root      20   0 1227712  22512  14348 S   0.0   0.5   0:25.40 /home/apps/FT_Apps/PHMServer/Sf_VCt_PHMServer_J5_1/bin/Sf_VCt_PHMServer_J5_1
+ 1677 root      20   0       0      0      0 S   0.0   0.0   0:00.90 [isp_connection]
+ 1678 root      20   0       0      0      0 D   0.0   0.0   0:16.68 [isp_process]
+ 1679 root     -41   0       0      0      0 S   0.0   0.0   0:01.76 [vio_gw1]
+ 1680 root      20   0       0      0      0 S   0.0   0.0   0:00.91 [isp_hw1_connect]
+ 1682 root     -41   0       0      0      0 S   0.0   0.0   0:01.58 [vio_gw2]
+ 1842 root      20   0  986684  11352   8444 S   0.0   0.2   0:00.16 ./Transmitter/Transmitter
+ 1845 root      20   0    4176   1892   1752 S   0.0   0.0   0:07.91 /bin/sh /etc/init.d/J5_1_cache.sh
+ 1856 root      20   0    4176   1164   1044 S   0.0   0.0   0:00.00 /usr/bin/busybox/getty -l /usr/bin/login -L ttyS1 921600 vt102 ::shutdown:/usr/+
+ 1969 root      20   0    3064   2360   1872 S   0.0   0.0   0:00.89 dropbear -B
+ 2062 root      20   0    2736   1956   1724 S   0.0   0.0   0:00.20 dropbear -B
+ 2063 root      20   0    4176   2428   2180 S   0.0   0.1   0:00.05 -sh
+ 2102 root      20   0    5080   3184   2868 S   0.0   0.1   0:00.01 /usr/libexec/sftp-server
+ 2236 root      20   0       0      0      0 I   0.0   0.0   0:00.03 [kworker/0:2-events]
+ 4253 root      20   0       0      0      0 I   0.0   0.0   0:00.24 [kworker/u16:8-events_unbound]
+ 4995 root      20   0 5929680  73120  42776 S   0.0   1.5   0:28.47 Sf_VCt_L3_FC120PolyfillCore
+ 5047 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [diag_vdsp0_diag]
+ 5092 root      20   0       0      0      0 S   0.0   0.0   0:00.00 [diag_vdsp1_diag]
+ 5131 root     -41   0       0      0      0 S   0.0   0.0   0:03.22 [vio_gw3]
+ 7627 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/1:0H-kblockd]
+ 8133 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/7:0H]
+ 8255 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/0:0H-mmc_complete]
+ 8256 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/4:0H-kblockd]
+ 8258 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/2:0H-kblockd]
+ 8398 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/6:0H-kblockd]
+ 8404 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/3:1H-kblockd]
+ 8412 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/5:0H-kblockd]
+12465 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/2:2H-kblockd]
+12541 root       0 -20       0      0      0 I   0.0   0.0   0:00.07 [kworker/0:1H-events_highpri]
+12609 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/4:2H]
+12624 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/1:2H]
+12835 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/3:2H]
+12979 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/6:2H-kblockd]
+13109 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 [kworker/5:2H]
+13251 root       0 -20       0      0      0 I   0.0   0.0   0:00.07 [kworker/7:2H-kblockd]
+16748 root      20   0    2020    768    692 S   0.0   0.0   0:00.00 sleep 10
